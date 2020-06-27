@@ -11,7 +11,7 @@
   "dependencies": {
     "fc-remote-ical": "git+https://github.com/cgalvarez/fc-remote-ical.git",
     "fullcalendar": "^3.10.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "moment": "^2.24.0",
     "node-fetch": "^2.6.0"
   }
