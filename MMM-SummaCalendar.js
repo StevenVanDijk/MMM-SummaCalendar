@@ -66,9 +66,15 @@ Module.register("MMM-SummaCalendar",{
                 wrapper.style.height = `${this.config.frameHeight}px`;
 
                 var html = `
-                        <div class="mmm-summaCalendar" style="padding-top: ${100 / (width / height)}%;">
-                                <div id="summacal"/>
-                        </div>
+                        <div>
+				<div class="mmm-piam" id="piamHolder">
+					<img class="mmm-piam-logo" style="height=2em" src="https://yt3.ggpht.com/IUH1OT7oQgs0AvC-1OEWikhL0P4JunuEe2is51qSEJsqJ9_ijQmr0Eyi_vkJSHDLM0NWFvZ_Jg=s88-c-k-c0x00ffffff-no-rj"/>
+					<div class="mmm-piam-content" style="display:inline" id="piam"></div>
+				</div>
+        	                <div class="mmm-summaCalendar" style="padding-top: ${100 / (width / height)}%;">
+                	                <div id="summacal"></div>
+                        	</div>
+			</div>
                 `;
 
                 wrapper.insertAdjacentHTML("afterbegin", html);
@@ -80,9 +86,13 @@ Module.register("MMM-SummaCalendar",{
                 console.log("SummaCalendar: " + noti + " received.");
                 if (noti === "SUMMACAL_SENDICAL" && this.readyForData != null)
                 {
+			var $piam = jQuery("#piam");
                         var $fc = jQuery("#summacal");
-                        
                         this.import($fc, payload);
+                        jQuery.get("https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCavWqY7ZVI0rQ7bVccxDnsg&key=AIzaSyDwgaazj2I-ldMc0PRCXpXzg1EvN6IuNAw", function(data, status){
+				var stats = data.items[0].statistics;
+				$piam.text(stats.viewCount + " views, " + stats.subscriberCount + " subscribers, " + stats.videoCount + " videos");
+			});
                 }
         },
 

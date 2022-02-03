@@ -12,25 +12,25 @@ module.exports = NodeHelper.create({
         var refreshData = function () {
             var cals = [
                 {
-                    url: 'https://calendar.google.com/calendar/ical/zteven%40gmail.com/private-9cd20111b6353f2fd6041401c6a9b817/basic.ics', // Steven
+                    url: 'https://calendar.google.com/calendar/ical/zteven%40gmail.com/private-84627a0a1c0097d07dec8bd3cca251d9/basic.ics', // Steven
                     color: 'gold'
                 }, {
-                    url: 'https://calendar.google.com/calendar/ical/nipe3hhjpl5m1o9bu2j3124kh4%40group.calendar.google.com/private-216fef6869b0f478890aa0f3f86b8dc7/basic.ics', // Gezamelijk
+                    url: 'https://calendar.google.com/calendar/ical/nipe3hhjpl5m1o9bu2j3124kh4%40group.calendar.google.com/private-4d3dbec67e308a113792aff58b13c839/basic.ics', // Gezamelijk
                     color: 'blue'
                 }, {
-                    url: 'https://calendar.google.com/calendar/ical/pepijn%40summadigita.com/private-cf6c8857f7f6595f581446b453e7d159/basic.ics',        // Pepijn
+                    url: 'https://calendar.google.com/calendar/ical/pepijn%40summadigita.com/private-636ad79f8bd46a9341537e632fd13ffd/basic.ics',        // Pepijn
                     color: 'red'
                 }, {
-                    url: 'https://calendar.google.com/calendar/ical/meikevalk%40gmail.com/private-bd2236ff6a8a4168019bf23aa188add0/basic.ics', // Meike 
+                    url: 'https://calendar.google.com/calendar/ical/pepijn%40summadigita.com/private-636ad79f8bd46a9341537e632fd13ffd/basic.ics', // Meike 
                     color: 'green'
                 }, {
-                    url: 'https://calendar.google.com/calendar/ical/kasper%40summadigita.com/private-60722de4a7e718df146d37d3dbcd7b4d/basic.ics', // Kasper
+                    url: 'https://calendar.google.com/calendar/ical/kasper%40summadigita.com/private-1ee72dc5e2899f598ea5f3f37bab5f1a/basic.ics', // Kasper
                     color: 'yellow'
                 }, {
-                    url: 'https://calendar.google.com/calendar/ical/marieke%40summadigita.com/private-4b4ddd5a09fbf8ca2f63b417de96edf0/basic.ics', // Marieke
+                    url: 'https://calendar.google.com/calendar/ical/marieke%40summadigita.com/private-25e167c28a1573d109ac129adc89ce61/basic.ics', // Marieke
                     color: 'brown'
                 }, {
-                    url: 'https://calendar.google.com/calendar/ical/u40mq0gqn694mdt70mc9ufjngo%40group.calendar.google.com/private-5ae8bb2659250c672292e2290f4dc692/basic.ics', // Kinderen
+                    url: 'https://calendar.google.com/calendar/ical/u40mq0gqn694mdt70mc9ufjngo%40group.calendar.google.com/private-31e5e8dd5205e47e2819610e09c9d1ae/basic.ics', // Droontjes
                     color: 'purple'
                 }
             ];
